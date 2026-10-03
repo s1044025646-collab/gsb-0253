@@ -1,0 +1,21 @@
+﻿{
+  "name": "a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/cli.js serve",
+    "demo": "node dist/src/demo.js",
+    "cli": "node dist/src/cli.js",
+    "test": "npm run build && node --test dist/test/engine.test.js dist/test/api.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
