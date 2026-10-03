@@ -1,0 +1,17 @@
+{
+  "name": "harddrop-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "harddrop backend",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/engine.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
